@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INSOMNIA | Stories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:radial-gradient(circle at top,#1a1a2e,#0f0f1a,#000);
+      color:#eaeaea;
+      min-height:100vh;
+    }
+    .container{max-width:900px;margin:auto;padding:60px 20px 120px}
+
+    header{text-align:center;margin-bottom:50px}
+    header h1{
+      font-family:'Playfair Display',serif;
+      font-size:3rem;
+      letter-spacing:3px;
+      animation:glow 3s infinite alternate
+    }
+    header p{opacity:.7;margin-top:10px}
+
+    .story-card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:18px;
+      padding:24px;
+      margin-bottom:25px;
+      cursor:pointer;
+      transition:.3s ease;
+    }
+    .story-card:hover{transform:translateY(-4px);background:rgba(255,255,255,0.08)}
+
+    .story-card h2{
+      font-family:'Playfair Display',serif;
+      font-size:1.6rem;
+      margin-bottom:10px
+    }
+    .story-card span{opacity:.6;font-size:.9rem}
+
+    .story-full{
+      display:none;
+      margin-top:30px;
+      animation:fadeIn 1.2s ease forwards;
+    }
+
+    .story-full p{line-height:1.9;margin-bottom:18px}
+
+    .bold-line{
+      text-align:center;
+      font-family:'Playfair Display',serif;
+      font-size:1.25rem;
+      color:#ffd6ff;
+      margin:35px 0
+    }
+
+    .back-btn{
+      display:inline-block;
+      margin:40px 0;
+      padding:8px 16px;
+      border-radius:20px;
+      background:rgba(255,255,255,0.1);
+      cursor:pointer;
+      font-size:.9rem
+    }
+
+    iframe{
+      width:100%;
+      height:220px;
+      border-radius:16px;
+      margin-top:40px;
+      box-shadow:0 10px 30px rgba(0,0,0,.6)
+    }
+
+    footer{
+      text-align:center;
+      margin-top:80px;
+      opacity:.6;
+      font-size:.85rem
+    }
+
+    @keyframes glow{from{text-shadow:0 0 5px #8b8bff}to{text-shadow:0 0 15px #cdb4ff}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <h1>INSOMNIA 🌙</h1>
+  <p>stories that never slept</p>
+</header>
+
+<!-- MAIN STORY LIST -->
+<div id="storyList">
+
+  <div class="story-card" onclick="openStory('story1')">
+    <h2>INSOMNIA — A Rave User</h2>
+    <span>I met her on Rave — a place where strangers listen to the same song but live different lives…</span>
+  </div>
+
+<div class="story-card" onclick="openStory('story3')">
+  <h2>Paused at 2:17 AM</h2>
+  <span>There’s a strange intimacy in pausing a movie together…</span>
+</div>
+
+<div class="story-card" onclick="openStory('story5')">
+  <h2>Online, But Not With Me</h2>
+  <span>She was online — just not with me…</span>
+</div>
+
+<div class="story-card" onclick="openStory('story2')">
+  <h2>Unsent Calls</h2>
+  <span>Some calls are never made, yet they ring louder than conversations…</span>
+</div>
+
+<div class="story-card" onclick="openStory('story4')">
+  <h2>Shared Memories</h2>
+  <span>Listening together is different from listening alone…</span>
+</div>
+
+
+<div class="story-card" onclick="openStory('story6')">
+  <h2>Temporary Sync</h2>
+  <span>Rave syncs screens, not futures…</span>
+</div>
+
+<div class="story-card">
+  <h2>🔒 Unwritten</h2>
+  <span>Some stories aren’t ready to be told yet…</span>
+</div>
+
+
+
+</div>
+
+<!-- STORY 1 FULL -->
+<div id="story1" class="story-full">
+  <div class="back-btn" onclick="goBack()">← Back to stories</div>
+
+
+<p>08/10/25</p>
+  <p>I met her on Rave — a place where strangers listen to the same song but live different lives. 🎧 At first, it was just music… and then movies… then silence that didn’t feel awkward. We stayed there for hours, not because we had to, but because neither of us wanted to leave.</p>
+
+  <p>Somewhere between playlists and late-night films, something unexplainable happened. It wasn’t love at first sight — there was no sight at all. It was a feeling. A pull. A comfort that didn’t ask questions.</p>
+
+  <p>Our vibes matched effortlessly. We laughed at the same scenes, paused the same songs, and felt understood without explaining too much. I started waiting for her notifications like they were promises. Nights turned into calls that lasted till morning. 🌌</p>
+
+  <p>There are feelings you can’t describe — only feel. Feelings that make you smile at your phone for no reason. Feelings that make time disappear.</p>
+
+  <p>And then… things changed.</p>
+
+  <p>Maybe it was ego. Maybe misunderstandings. Maybe silence growing louder than words.</p>
+
+  <p>We started drifting without knowing how. Conversations felt forced, replies became delayed, and the warmth slowly faded. One day, without any proper goodbye, we removed each other — like deleting a chapter that was never finished.</p>
+
+  <p>I missed the nights. I missed the calls. I missed being there with her — even if it was just through a screen.</p>
+
+  <p>But life is unfair in its own quiet way. Sometimes the person you choose doesn’t choose you back. Sometimes they move on, or choose someone else, while you’re still stuck replaying memories.</p>
+
+  <div class="bold-line">💔 There are many people who like me, but the one I like was never meant to be mine.</div>
+
+  <p>Not because she left… but because what we had was real — even if it was temporary.</p>
+
+  <p>Some connections don’t last forever, but they stay with you. In songs. In movies. In late-night silence.</p>
+
+  <p>And maybe that’s where she’ll always be — not in my life, but in my heart, quietly, endlessly. 🌑</p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/xZMIpPqnrzg?si=GBZOcnrrnw4xjKI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+
+<div id="story3" class="story-full">
+  <div class="back-btn" onclick="goBack()">← Back to stories</div>
+
+<p>16/10/25</p>
+  <p>2:17 AM. The movie was paused.</p>
+
+  <p>Not because the scene demanded it — but because we wanted to talk. About nothing. About everything. About how nights feel heavier than days.</p>
+
+  <p>Rave made it feel like the world didn’t exist beyond that screen. Just two souls synced by a progress bar.</p>
+
+  <p>I wonder if she still pauses movies. If she still waits before pressing play.</p>
+
+  <div class="bold-line">Some moments are meant to stay paused forever.</div>
+</div>
+
+
+
+<!-- STORY 2 FULL -->
+
+<div id="story2" class="story-full">
+  <div class="back-btn" onclick="goBack()">← Back to stories</div>
+
+  <p>Some calls are never made, yet they ring louder than conversations.</p>
+
+  <p>We used to stay connected even when neither of us spoke. The call would run in the background while songs played on Rave, while I stared at the ceiling and she hummed softly.</p>
+
+  <p>I remember hovering over the call button so many nights. Not because I didn’t want to talk — but because I didn’t know if I was still allowed to.</p>
+
+  <p>Time changes people quietly. One day, you’re the first voice they want to hear. Another day, you’re just a name they scroll past.</p>
+
+  <p>I never called. And she never did either.</p>
+
+  <div class="bold-line">Some connections don’t end with goodbye. They end with waiting.</div>
+</div>
+
+
+
+
+
+<div id="story4" class="story-full">
+  <div class="back-btn" onclick="goBack()">← Back to stories</div>
+
+  <p>Listening together is different from listening alone.</p>
+
+  <p>Every song felt shared — like it belonged to both of us. When she liked a track, I liked it too. Not because it was good, but because she was listening.</p>
+
+  <p>Music became our language. We didn’t say much, but the playlist said everything.</p>
+
+  <p>Now those songs feel heavier. They don’t sound the same anymore.</p>
+
+  <div class="bold-line">Some playlists aren’t meant to be replayed.</div>
+</div>
+
+
+
+
+
+<div id="story5" class="story-full">
+  <div class="back-btn" onclick="goBack()">← Back to stories</div>
+
+<p>28/10/25</p>
+  <p>I saw her online last night.</p>
+  <p>Same app.
+<p>Same time.</p>
+<p>Different space.</p>
+  <p>Rave shows you who’s there — but "private" not shows you who they’re with. And that’s the cruel part.</p>
+<p>Knowing she’s listening to music, just not with me.</p>
+  <p>I didn’t send a invite. I didn’t interrupt.</p>
+
+  <div class="bold-line">Because sometimes loving someone means letting them exist without you.</div>
+
+<p>She was online.</p>
+<p>And I was alone.</p>
+
+
+</div>
+
+
+
+
+
+<div id="story6" class="story-full">
+  <div class="back-btn" onclick="goBack()">← Back to stories</div>
+
+  <p>Rave syncs screens, not futures.</p>
+
+  <p>We were perfectly synced — same movie, same song, same emotions.</p>
+
+  <p>But when the app closed, reality opened.</p>
+
+  <p>Temporary connections feel the deepest because they don’t come with promises.</p>
+
+  <div class="bold-line">Not everything that feels real is meant to last.</div>
+</div>
+
+
+
+
+<footer>— A Rave User</footer>
+
+</div>
+
+<script>
+  function openStory(id){
+    document.getElementById('storyList').style.display='none';
+    document.getElementById(id).style.display='block';
+    window.scrollTo(0,0);
+  }
+  function goBack(){
+    document.getElementById('storyList').style.display='block';
+    document.querySelectorAll('.story-full').forEach(s=>s.style.display='none');
+  }
+</script>
+
+</body>
+</html>
